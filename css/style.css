@@ -1,0 +1,25 @@
+a {
+    background-color:Blue ;
+    color:White;  
+}
+
+h2#heading1{
+    Background-color:Yellow ;
+}
+
+a.11{ 
+    Background-Color:Pink;
+}
+
+Ul>LI{
+    list-style-type: style square;
+}
+
+ul q{
+    Background-color:Green;
+}
+
+h1~p{
+    Background-color:Orange;
+}
+

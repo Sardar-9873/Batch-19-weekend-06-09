@@ -1,0 +1,37 @@
+ul{
+    list-style: decimal-leading-zero inside;
+    cursor: progress;
+}
+
+li{
+    background-color: blueviolet;
+    margin: 2px;
+}
+
+table{
+    width: max-content;
+    border:black solid 2px;
+    border-collapse: collapse;
+    cursor: all-scroll;
+}
+
+
+td{
+    padding:0;
+    border:black solid 2px;
+    background-color: aqua;
+    color: blueviolet;
+}
+
+
+/* tr{
+    border:black solid 2px;
+} */
+
+/* tr:hover{
+    background-color: black;
+} */
+
+/* cursor{
+    zoom: normal;
+} */

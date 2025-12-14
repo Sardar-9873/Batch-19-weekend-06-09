@@ -1,0 +1,370 @@
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 3px solid black;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+td#r1{
+    background-color:#FF2400;
+}
+
+td#r2{
+    background-color: #DC143C;
+}
+
+td#r3{
+    background-color: #800000;
+}
+
+td#r4{
+    background-color: #9f032a;
+}
+
+td#r5{
+    background-color: #E34234;
+}
+
+td#r6{
+    background-color: #C21E56;
+}
+
+td#r7{
+    background-color: #AA4A44;
+}
+
+td#r8{
+    background-color: #C41E3A;
+}
+
+td#r9{
+    background-color: #954535;
+}
+
+td#r10{
+    background-color: #D2042D;
+}
+
+td#y1{
+    background-color: #FFFF8F;
+}
+
+td#y2{
+    background-color: #DFFF00;
+}
+
+td#y3{
+    background-color: #FFF8DC ;
+}
+
+td#y4{
+    background-color: #ffbf00;
+}
+
+td#y5{
+    background-color: #FFDA03;
+}
+
+td#y6{
+    background-color: #FFFD74;
+}
+
+td#y7{
+    background-color: #8B8000;
+}
+
+td#y8{
+    background-color: #f6e208;
+}
+
+td#y9{
+    background-color: #FFFACD;
+}
+
+td#y10{
+    background-color: #F0E68C;
+}
+
+td#b1{
+    background-color: #89CFF0;
+}
+
+td#b2{
+    background-color: #4169E1;
+}
+
+td#b3{
+    background-color: #87CEEB;
+}
+
+td#b4{
+    background-color: #4682B4;
+}
+
+td#b5{
+    background-color: #191970;
+}
+
+td#b6{
+    background-color:#0f0fe0 ;
+}
+
+td#b7{
+    background-color: #008080;
+}
+
+td#b8{
+    background-color: #40E0D0;
+}
+
+td#b9{
+    background-color: #6495ED;
+}
+
+td#b10{
+    background-color: #ADD8E6;
+}
+
+td#g1{
+    background-color: #228B22;
+}
+
+td#g2{
+    background-color: #32CD32;
+}
+
+td#g3{
+    background-color: #98FB98;
+}
+
+td#g4{
+    background-color: #808000;
+}
+
+td#g5{
+    background-color: #4CBB17;
+}
+
+td#g6{
+    background-color:#2E8B57 ;
+}
+
+td#g7{
+    background-color: #4F7942;
+}
+
+td#g8{
+    background-color: #02ffab;
+}
+
+td#g9{
+    background-color: #7CFC00;
+}
+
+td#g10{
+    background-color: #8A9A5B;
+}
+
+td#o1{
+    background-color: #FFBF00;
+}
+
+td#o2{
+    background-color: #FFAC1C;
+}
+
+td#o3{
+    background-color: #CC5500;
+}
+
+td#o4{
+    background-color: #FF7F50;
+}
+
+td#o5{
+    background-color: #8B4000;
+}
+
+td#o6{
+    background-color: #FF5F1F;
+}
+
+td#o7{
+    background-color: #FFA500;
+}
+
+td#o8{
+    background-color: #FF7518;
+}
+
+td#o9{
+    background-color: #F08000;
+}
+
+td#o10{
+    background-color: #FFAA33;
+}
+
+td#p1{
+    background-color: #FF69B4;
+}
+
+td#p2{
+    background-color: #FFB6C1;
+}
+
+td#p3{
+    background-color: #F8C8DC;
+}
+
+td#p4{
+    background-color: #FF69B4;
+}
+
+td#p5{
+    background-color:#FF7F50;
+}
+
+td#p6{
+    background-color: #DC143C;
+}
+
+td#p7{
+    background-color: #FF00FF;
+}
+
+td#p8{
+    background-color: #DE3163;
+}
+
+td#p9{
+    background-color: #F3CFC6;
+}
+
+td#p10{
+    background-color: #9F2B68;
+}
+
+td#pr1{
+    background-color: #7F00FF;
+}
+
+td#pr2{
+    background-color: #800080;
+}
+
+td#pr3{
+    background-color: #8F00FF;
+}
+
+td#pr4{
+    background-color: #9932CC;
+}
+
+td#pr5{
+    background-color: #E6E6FA;
+}
+
+td#pr6{
+    background-color: #E0B0FF;
+}
+
+td#pr7{
+    background-color: #CBC3E3;
+}
+
+td#pr8{
+    background-color:#D8BFD8 ;
+}
+
+td#pr9{
+    background-color: #301934;
+}
+
+td#pr10{
+    background-color: #4B0082;
+}
+
+td#br1{
+    background-color: #8B4513;
+}
+
+td#br2{
+    background-color: #6F4E37;
+}
+
+td#br3{
+    background-color: #5C4033;
+}
+
+td#br4{
+    background-color: #7B3F00;
+}
+
+td#br5{
+    background-color: #D2B48C;
+}
+
+td#br6{
+    background-color: #954535;
+}
+
+td#br7{
+    background-color: #E97451;
+}
+
+td#br8{
+    background-color: #CD7F32;
+}
+
+td#br9{
+    background-color:#713b09 ;
+}
+
+td#br10{
+    background-color:#f87800 ;
+}
+
+td#bl1{
+    background-color: #000;
+}
+
+td#bl2{
+    background-color: #343434;
+}
+
+td#bl3{
+    background-color: #28282B;
+}
+
+td#bl4{
+    background-color:#0D0D0D;
+}
+
+td#bl5{
+    background-color: #353935;
+}
+
+td#bl6{
+    background-color: #202124;
+}
+
+td#bl7{
+    background-color: #36454F;
+}
+
+td#bl8{
+    background-color: #181818;
+}
+
+td#bl9{
+    background-color: #4E545C;
+}
+
+td#bl10{
+    background-color: #1B1212;
+}

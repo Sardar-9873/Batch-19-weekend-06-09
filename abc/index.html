@@ -1,14 +1,664 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>HTML Tags — 50-question Quiz (Self-grading)</title>
+<style>
+  :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8}
+  body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial; background:linear-gradient(180deg,#071029 0%, #071726 100%); color:#e6eef6; padding:24px}
+  .container{max-width:980px;margin:0 auto;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:20px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.7)}
+  h1{font-size:1.6rem;margin:0 0 8px}
+  p.lead{color:var(--muted);margin-top:0}
+  .meta{display:flex;gap:12px;align-items:center;margin:12px 0}
+  .meta .chip{background:rgba(255,255,255,0.02);padding:6px 10px;border-radius:999px;font-size:0.9rem;color:var(--muted)}
+  form{margin-top:12px}
+  .q{background:rgba(2,6,23,0.6);padding:12px;border-radius:8px;margin-bottom:10px}
+  .q h3{margin:0 0 8px;font-size:1rem}
+  .options{display:flex;flex-direction:column;gap:6px}
+  label.option{display:flex;align-items:center;gap:8px;padding:8px;border-radius:6px;border:1px solid transparent}
+  input[type=radio]{width:16px;height:16px}
+  .controls{display:flex;gap:8px;margin-top:12px}
+  button{background:var(--accent);border:none;color:#022;padding:10px 14px;border-radius:8px;font-weight:600;cursor:pointer}
+  button.secondary{background:transparent;color:var(--accent);border:1px solid rgba(6,182,212,0.2)}
+  #results{margin-top:12px;padding:12px;border-radius:8px;background:rgba(6,182,212,0.06);color:var(--muted)}
+  .wrong{color:#ff6b6b}
+  .correct{color:#8ef49b}
+  .small{font-size:0.9rem;color:var(--muted)}
+  .retry{margin-left:auto}
+</style>
 </head>
-
 <body>
-    <h1>Welcome</h1>
-</body>
+  <div class="container">
+    <h1>HTML Tags — 50-question Quiz</h1>
+    <p class="lead">Multiple choice — pick one answer per question. Click <strong>Submit</strong> to grade. The quiz is self-grading and shows which questions you missed and the correct answers. Good luck!</p>
+    <div class="meta">
+      <div class="chip">Questions: 50</div>
+      <div class="chip">Type: HTML tags &amp; purposes</div>
+      <div class="chip small">Score will show after submission</div>
+    </div>
 
+    <form id="quiz">
+
+<!-- We'll include 50 concise questions covering many HTML tags. Each question element has data-answer set to the correct option value -->
+
+<!-- 1 -->
+<div class="q" data-answer="a">
+  <h3>1. Which tag defines a hyperlink?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q1" value="a"> &lt;a&gt;</label>
+    <label class="option"><input type="radio" name="q1" value="b"> &lt;link&gt;</label>
+    <label class="option"><input type="radio" name="q1" value="c"> &lt;nav&gt;</label>
+    <label class="option"><input type="radio" name="q1" value="d"> &lt;href&gt;</label>
+  </div>
+</div>
+
+<!-- 2 -->
+<div class="q" data-answer="b">
+  <h3>2. Which tag is used to insert an image?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q2" value="a"> &lt;picture&gt;</label>
+    <label class="option"><input type="radio" name="q2" value="b"> &lt;img&gt;</label>
+    <label class="option"><input type="radio" name="q2" value="c"> &lt;figure&gt;</label>
+    <label class="option"><input type="radio" name="q2" value="d"> &lt;source&gt;</label>
+  </div>
+</div>
+
+<!-- 3 -->
+<div class="q" data-answer="c">
+  <h3>3. Which tag groups options inside a &lt;select&gt; element?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q3" value="a"> &lt;option&gt;</label>
+    <label class="option"><input type="radio" name="q3" value="b"> &lt;selectgroup&gt;</label>
+    <label class="option"><input type="radio" name="q3" value="c"> &lt;optgroup&gt;</label>
+    <label class="option"><input type="radio" name="q3" value="d"> &lt;group&gt;</label>
+  </div>
+</div>
+
+<!-- 4 -->
+<div class="q" data-answer="d">
+  <h3>4. Which tag is semantic for a self-contained composition, like a blog post?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q4" value="a"> &lt;div&gt;</label>
+    <label class="option"><input type="radio" name="q4" value="b"> &lt;section&gt;</label>
+    <label class="option"><input type="radio" name="q4" value="c"> &lt;article&gt;</label>
+    <label class="option"><input type="radio" name="q4" value="d"> &lt;article&gt;</label>
+  </div>
+</div>
+
+<!-- 5 -->
+<div class="q" data-answer="a">
+  <h3>5. Which tag defines a section that is tangentially related to the content (sidebar)?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q5" value="a"> &lt;aside&gt;</label>
+    <label class="option"><input type="radio" name="q5" value="b"> &lt;asidebar&gt;</label>
+    <label class="option"><input type="radio" name="q5" value="c"> &lt;nav&gt;</label>
+    <label class="option"><input type="radio" name="q5" value="d"> &lt;footer&gt;</label>
+  </div>
+</div>
+
+<!-- 6 -->
+<div class="q" data-answer="b">
+  <h3>6. Which tag is used to create a numbered (ordered) list?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q6" value="a"> &lt;ul&gt;</label>
+    <label class="option"><input type="radio" name="q6" value="b"> &lt;ol&gt;</label>
+    <label class="option"><input type="radio" name="q6" value="c"> &lt;li&gt;</label>
+    <label class="option"><input type="radio" name="q6" value="d"> &lt;list&gt;</label>
+  </div>
+</div>
+
+<!-- 7 -->
+<div class="q" data-answer="c">
+  <h3>7. Which tag represents the container for all visible HTML content?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q7" value="a"> &lt;body&gt;</label>
+    <label class="option"><input type="radio" name="q7" value="b"> &lt;main&gt;</label>
+    <label class="option"><input type="radio" name="q7" value="c"> &lt;html&gt;</label>
+    <label class="option"><input type="radio" name="q7" value="d"> &lt;page&gt;</label>
+  </div>
+</div>
+
+<!-- 8 -->
+<div class="q" data-answer="a">
+  <h3>8. Which tag is used to embed JavaScript code?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q8" value="a"> &lt;script&gt;</label>
+    <label class="option"><input type="radio" name="q8" value="b"> &lt;js&gt;</label>
+    <label class="option"><input type="radio" name="q8" value="c"> &lt;code&gt;</label>
+    <label class="option"><input type="radio" name="q8" value="d"> &lt;source&gt;</label>
+  </div>
+</div>
+
+<!-- 9 -->
+<div class="q" data-answer="d">
+  <h3>9. Which tag provides a multi-line text input control?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q9" value="a"> &lt;input type="text"&gt;</label>
+    <label class="option"><input type="radio" name="q9" value="b"> &lt;textbox&gt;</label>
+    <label class="option"><input type="radio" name="q9" value="c"> &lt;field&gt;</label>
+    <label class="option"><input type="radio"name="q9" value="d"> &lt;textarea&gt;</label>
+  </div>
+</div>
+
+<!-- 10 -->
+<div class="q" data-answer="b">
+  <h3>10. Which tag defines the document head (metadata, title, links)?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q10" value="a"> &lt;meta&gt;</label>
+    <label class="option"><input type="radio" name="q10" value="b"> &lt;head&gt;</label>
+    <label class="option"><input type="radio" name="q10" value="c"> &lt;header&gt;</label>
+    <label class="option"><input type="radio" name="q10" value="d"> &lt;title&gt;</label>
+  </div>
+</div>
+
+<!-- 11 -->
+<div class="q" data-answer="c">
+  <h3>11. Which tag is used to mark emphasized text (usually italic)?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q11" value="a"> &lt;strong&gt;</label>
+    <label class="option"><input type="radio" name="q11" value="b"> &lt;b&gt;</label>
+    <label class="option"><input type="radio" name="q11" value="c"> &lt;em&gt;</label>
+    <label class="option"><input type="radio" name="q11" value="d"> &lt;i&gt;</label>
+  </div>
+</div>
+
+<!-- 12 -->
+<div class="q" data-answer="a">
+  <h3>12. Which tag defines a table row?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q12" value="a"> &lt;tr&gt;</label>
+    <label class="option"><input type="radio" name="q12" value="b"> &lt;td&gt;</label>
+    <label class="option"><input type="radio" name="q12" value="c"> &lt;th&gt;</label>
+    <label class="option"><input type="radio" name="q12" value="d"> &lt;row&gt;</label>
+  </div>
+</div>
+
+<!-- 13 -->
+<div class="q" data-answer="d">
+  <h3>13. Which tag represents a caption for a &lt;figure&gt;?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q13" value="a"> &lt;caption&gt;</label>
+    <label class="option"><input type="radio" name="q13" value="b"> &lt;label&gt;</label>
+    <label class="option"><input type="radio" name="q13" value="c"> &lt;alt&gt;</label>
+    <label class="option"><input type="radio" name="q13" value="d"> &lt;figcaption&gt;</label>
+  </div>
+</div>
+
+<!-- 14 -->
+<div class="q" data-answer="b">
+  <h3>14. Which tag is used to include CSS styles inside the page?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q14" value="a"> &lt;stylelink&gt;</label>
+    <label class="option"><input type="radio" name="q14" value="b"> &lt;style&gt;</label>
+    <label class="option"><input type="radio" name="q14" value="c"> &lt;css&gt;</label>
+    <label class="option"><input type="radio" name="q14" value="d"> &lt;link&gt;</label>
+  </div>
+</div>
+
+<!-- 15 -->
+<div class="q" data-answer="a">
+  <h3>15. Which tag is used to embed a video player?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q15" value="a"> &lt;video&gt;</label>
+    <label class="option"><input type="radio" name="q15" value="b"> &lt;media&gt;</label>
+    <label class="option"><input type="radio" name="q15" value="c"> &lt;movie&gt;</label>
+    <label class="option"><input type="radio" name="q15" value="d"> &lt;iframe&gt;</label>
+  </div>
+</div>
+
+<!-- 16 -->
+<div class="q" data-answer="b">
+  <h3>16. Which tag creates a clickable button?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q16" value="a"> &lt;input type="button"&gt;</label>
+    <label class="option"><input type="radio" name="q16" value="b"> &lt;button&gt;</label>
+    <label class="option"><input type="radio" name="q16" value="c"> &lt;link&gt;</label>
+    <label class="option"><input type="radio" name="q16" value="d"> &lt;a&gt;</label>
+  </div>
+</div>
+
+<!-- 17 -->
+<div class="q" data-answer="c">
+  <h3>17. Which tag is used for inline code snippets?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q17" value="a"> &lt;kbd&gt;</label>
+    <label class="option"><input type="radio" name="q17" value="b"> &lt;pre&gt;</label>
+    <label class="option"><input type="radio" name="q17" value="c"> &lt;code&gt;</label>
+    <label class="option"><input type="radio" name="q17" value="d"> &lt;samp&gt;</label>
+  </div>
+</div>
+
+<!-- 18 -->
+<div class="q" data-answer="a">
+  <h3>18. Which tag defines a caption for a table (&lt;table&gt;)?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q18" value="a"> &lt;caption&gt;</label>
+    <label class="option"><input type="radio" name="q18" value="b"> &lt;figcaption&gt;</label>
+    <label class="option"><input type="radio" name="q18" value="c"> &lt;summary&gt;</label>
+    <label class="option"><input type="radio" name="q18" value="d"> &lt;title&gt;</label>
+  </div>
+</div>
+
+<!-- 19 -->
+<div class="q" data-answer="d">
+  <h3>19. Which tag is used to define table header cells?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q19" value="a"> &lt;td&gt;</label>
+    <label class="option"><input type="radio" name="q19" value="b"> &lt;tr&gt;</label>
+    <label class="option"><input type="radio" name="q19" value="c"> &lt;thead&gt;</label>
+    <label class="option"><input type="radio" name="q19" value="d"> &lt;th&gt;</label>
+  </div>
+</div>
+
+<!-- 20 -->
+<div class="q" data-answer="b">
+  <h3>20. Which tag represents a paragraph?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q20" value="a"> &lt;div&gt;</label>
+    <label class="option"><input type="radio" name="q20" value="b"> &lt;p&gt;</label>
+    <label class="option"><input type="radio" name="q20" value="c"> &lt;span&gt;</label>
+    <label class="option"><input type="radio" name="q20" value="d"> &lt;text&gt;</label>
+  </div>
+</div>
+
+<!-- 21 -->
+<div class="q" data-answer="a">
+  <h3>21. Which tag defines an HTML comment that is not displayed?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q21" value="a"> <!-- comment --></label>
+    <label class="option"><input type="radio" name="q21" value="b"> &lt;!-- --&gt;</label>
+    <label class="option"><input type="radio" name="q21" value="c"> &lt;comment&gt;</label>
+    <label class="option"><input type="radio" name="q21" value="d"> &lt;note&gt;</label>
+  </div>
+</div>
+
+<!-- 22 -->
+<div class="q" data-answer="c">
+  <h3>22. Which tag is used to embed external content like a PDF or another web page?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q22" value="a"> &lt;embed&gt;</label>
+    <label class="option"><input type="radio" name="q22" value="b"> &lt;object&gt;</label>
+    <label class="option"><input type="radio" name="q22" value="c"> &lt;iframe&gt;</label>
+    <label class="option"><input type="radio" name="q22" value="d"> &lt;frame&gt;</label>
+  </div>
+</div>
+
+<!-- 23 -->
+<div class="q" data-answer="b">
+  <h3>23. Which tag defines a caption for &lt;details&gt; (the summary shown when closed)?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q23" value="a"> &lt;caption&gt;</label>
+    <label class="option"><input type="radio" name="q23" value="b"> &lt;summary&gt;</label>
+    <label class="option"><input type="radio" name="q23" value="c"> &lt;label&gt;</label>
+    <label class="option"><input type="radio" name="q23" value="d"> &lt;detailscaption&gt;</label>
+  </div>
+</div>
+
+<!-- 24 -->
+<div class="q" data-answer="d">
+  <h3>24. Which tag is used to represent important text with strong importance (often bold)?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q24" value="a"> &lt;em&gt;</label>
+    <label class="option"><input type="radio" name="q24" value="b"> &lt;b&gt;</label>
+    <label class="option"><input type="radio" name="q24" value="c"> &lt;mark&gt;</label>
+    <label class="option"><input type="radio" name="q24" value="d"> &lt;strong&gt;</label>
+  </div>
+</div>
+
+<!-- 25 -->
+<div class="q" data-answer="a">
+  <h3>25. Which tag defines a semantic navigation block (site menu)?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q25" value="a"> &lt;nav&gt;</label>
+    <label class="option"><input type="radio" name="q25" value="b"> &lt;menu&gt;</label>
+    <label class="option"><input type="radio" name="q25" value="c"> &lt;ul&gt;</label>
+    <label class="option"><input type="radio" name="q25" value="d"> &lt;header&gt;</label>
+  </div>
+</div>
+
+<!-- 26 -->
+<div class="q" data-answer="b">
+  <h3>26. Which tag is used to provide alternative text for media (not a real tag but an attribute)?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q26" value="a"> &lt;alt&gt;</label>
+    <label class="option"><input type="radio" name="q26" value="b"> the <code>alt</code> attribute on &lt;img&gt;</label>
+    <label class="option"><input type="radio" name="q26" value="c"> &lt;caption&gt;</label>
+    <label class="option"><input type="radio" name="q26" value="d"> &lt;figure&gt;</label>
+  </div>
+</div>
+
+<!-- 27 -->
+<div class="q" data-answer="c">
+  <h3>27. Which tag is typically used to include captions for media like &lt;video&gt; (&amp; tracks)?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q27" value="a"> &lt;caption&gt;</label>
+    <label class="option"><input type="radio" name="q27" value="b"> &lt;subs&gt;</label>
+    <label class="option"><input type="radio" name="q27" value="c"> &lt;track&gt;</label>
+    <label class="option"><input type="radio" name="q27" value="d"> &lt;subtitle&gt;</label>
+  </div>
+</div>
+
+<!-- 28 -->
+<div class="q" data-answer="a">
+  <h3>28. Which tag is used to define a section in a document, like chapters?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q28" value="a"> &lt;section&gt;</label>
+    <label class="option"><input type="radio" name="q28" value="b"> &lt;div&gt;</label>
+    <label class="option"><input type="radio" name="q28" value="c"> &lt;article&gt;</label>
+    <label class="option"><input type="radio" name="q28" value="d"> &lt;part&gt;</label>
+  </div>
+</div>
+
+<!-- 29 -->
+<div class="q" data-answer="d">
+  <h3>29. Which tag shows a short inline quotation?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q29" value="a"> &lt;blockquote&gt;</label>
+    <label class="option"><input type="radio" name="q29" value="b"> &lt;quote&gt;</label>
+    <label class="option"><input type="radio" name="q29" value="c"> &lt;cite&gt;</label>
+    <label class="option"><input type="radio" name="q29" value="d"> &lt;q&gt;</label>
+  </div>
+</div>
+
+<!-- 30 -->
+<div class="q" data-answer="a">
+  <h3>30. Which tag defines a thematic grouping of content, often used with a legend?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q30" value="a"> &lt;fieldset&gt;</label>
+    <label class="option"><input type="radio" name="q30" value="b"> &lt;group&gt;</label>
+    <label class="option"><input type="radio" name="q30" value="c"> &lt;legend&gt;</label>
+    <label class="option"><input type="radio" name="q30" value="d"> &lt;form&gt;</label>
+  </div>
+</div>
+
+<!-- 31 -->
+<div class="q" data-answer="c">
+  <h3>31. Which tag pairs with &lt;li&gt; to wrap list items in an unordered list?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q31" value="a"> &lt;ol&gt;</label>
+    <label class="option"><input type="radio" name="q31" value="b"> &lt;dl&gt;</label>
+    <label class="option"><input type="radio" name="q31" value="c"> &lt;ul&gt;</label>
+    <label class="option"><input type="radio" name="q31" value="d"> &lt;menu&gt;</label>
+  </div>
+</div>
+
+<!-- 32 -->
+<div class="q" data-answer="b">
+  <h3>32. Which tag adds a horizontal rule (a thematic break)?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q32" value="a"> &lt;br&gt;</label>
+    <label class="option"><input type="radio" name="q32" value="b"> &lt;hr&gt;</label>
+    <label class="option"><input type="radio" name="q32" value="c"> &lt;rule&gt;</label>
+    <label class="option"><input type="radio" name="q32" value="d"> &lt;line&gt;</label>
+  </div>
+</div>
+
+<!-- 33 -->
+<div class="q" data-answer="a">
+  <h3>33. Which tag forces a line break?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q33" value="a"> &lt;br&gt;</label>
+    <label class="option"><input type="radio" name="q33" value="b"> &lt;break&gt;</label>
+    <label class="option"><input type="radio" name="q33" value="c"> &lt;hr&gt;</label>
+    <label class="option"><input type="radio" name="q33" value="d"> &lt;lb&gt;</label>
+  </div>
+</div>
+
+<!-- 34 -->
+<div class="q" data-answer="d">
+  <h3>34. Which tag specifies a definition list term?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q34" value="a"> &lt;dt&gt;</label>
+    <label class="option"><input type="radio" name="q34" value="b"> &lt;dd&gt;</label>
+    <label class="option"><input type="radio" name="q34" value="c"> &lt;dl&gt;</label>
+    <label class="option"><input type="radio" name="q34" value="d"> &lt;dt&gt;</label>
+  </div>
+</div>
+
+<!-- 35 -->
+<div class="q" data-answer="b">
+  <h3>35. Which tag defines the main content area of a document?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q35" value="a"> &lt;section&gt;</label>
+    <label class="option"><input type="radio" name="q35" value="b"> &lt;main&gt;</label>
+    <label class="option"><input type="radio" name="q35" value="c"> &lt;article&gt;</label>
+    <label class="option"><input type="radio" name="q35" value="d"> &lt;body&gt;</label>
+  </div>
+</div>
+
+<!-- 36 -->
+<div class="q" data-answer="c">
+  <h3>36. Which tag defines metadata like character set and viewport?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q36" value="a"> &lt;link&gt;</label>
+    <label class="option"><input type="radio" name="q36" value="b"> &lt;meta&gt;</label>
+    <label class="option"><input type="radio" name="q36" value="c"> &lt;meta&gt;</label>
+    <label class="option"><input type="radio" name="q36" value="d"> &lt;head&gt;</label>
+  </div>
+</div>
+
+<!-- 37 -->
+<div class="q" data-answer="d">
+  <h3>37. Which tag defines an abbreviation with a full description available on hover?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q37" value="a"> &lt;abbrtitle&gt;</label>
+    <label class="option"><input type="radio" name="q37" value="b"> &lt;acronym&gt;</label>
+    <label class="option"><input type="radio" name="q37" value="c"> &lt;tooltip&gt;</label>
+    <label class="option"><input type="radio" name="q37" value="d"> &lt;abbr&gt;</label>
+  </div>
+</div>
+
+<!-- 38 -->
+<div class="q" data-answer="b">
+  <h3>38. Which tag defines preformatted text that preserves whitespace?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q38" value="a"> &lt;code&gt;</label>
+    <label class="option"><input type="radio" name="q38" value="b"> &lt;pre&gt;</label>
+    <label class="option"><input type="radio" name="q38" value="c"> &lt;plaintext&gt;</label>
+    <label class="option"><input type="radio" name="q38" value="d"> &lt;samp&gt;</label>
+  </div>
+</div>
+
+<!-- 39 -->
+<div class="q" data-answer="a">
+  <h3>39. Which tag is used to define keyboard input (user key presses)?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q39" value="a"> &lt;kbd&gt;</label>
+    <label class="option"><input type="radio" name="q39" value="b"> &lt;input type="key"&gt;</label>
+    <label class="option"><input type="radio" name="q39" value="c"> &lt;code&gt;</label>
+    <label class="option"><input type="radio" name="q39" value="d"> &lt;button&gt;</label>
+  </div>
+</div>
+
+<!-- 40 -->
+<div class="q" data-answer="c">
+  <h3>40. Which element is used to link external resources like stylesheets?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q40" value="a"> &lt;script&gt;</label>
+    <label class="option"><input type="radio" name="q40" value="b"> &lt;style&gt;</label>
+    <label class="option"><input type="radio" name="q40" value="c"> &lt;link&gt;</label>
+    <label class="option"><input type="radio" name="q40" value="d"> &lt;import&gt;</label>
+  </div>
+</div>
+
+<!-- 41 -->
+<div class="q" data-answer="b">
+  <h3>41. Which tag defines a small side comment or fine print?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q41" value="a"> &lt;aside&gt;</label>
+    <label class="option"><input type="radio" name="q41" value="b"> &lt;small&gt;</label>
+    <label class="option"><input type="radio" name="q41" value="c"> &lt;footer&gt;</label>
+    <label class="option"><input type="radio" name="q41" value="d"> &lt;note&gt;</label>
+  </div>
+</div>
+
+<!-- 42 -->
+<div class="q" data-answer="d">
+  <h3>42. Which tag is used for embedding scalable graphics via code?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q42" value="a"> &lt;canvas&gt;</label>
+    <label class="option"><input type="radio" name="q42" value="b"> &lt;img&gt;</label>
+    <label class="option"><input type="radio" name="q42" value="c"> &lt;svgfile&gt;</label>
+    <label class="option"><input type="radio" name="q42" value="d"> &lt;svg&gt;</label>
+  </div>
+</div>
+
+<!-- 43 -->
+<div class="q" data-answer="a">
+  <h3>43. Which tag is used to define the title shown in browser tab?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q43" value="a"> &lt;title&gt;</label>
+    <label class="option"><input type="radio" name="q43" value="b"> &lt;head&gt;</label>
+    <label class="option"><input type="radio" name="q43" value="c"> &lt;meta name="title"&gt;</label>
+    <label class="option"><input type="radio" name="q43" value="d"> &lt;header&gt;</label>
+  </div>
+</div>
+
+<!-- 44 -->
+<div class="q" data-answer="b">
+  <h3>44. Which tag is used to mark text that should be displayed in a monospaced font for sample output?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q44" value="a"> &lt;code&gt;</label>
+    <label class="option"><input type="radio" name="q44" value="b"> &lt;samp&gt;</label>
+    <label class="option"><input type="radio" name="q44" value="c"> &lt;pre&gt;</label>
+    <label class="option"><input type="radio" name="q44" value="d"> &lt;var&gt;</label>
+  </div>
+</div>
+
+<!-- 45 -->
+<div class="q" data-answer="c">
+  <h3>45. Which tag defines an interactive widget that shows the result of a calculation?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q45" value="a"> &lt;meter&gt;</label>
+    <label class="option"><input type="radio" name="q45" value="b"> &lt;progress&gt;</label>
+    <label class="option"><input type="radio" name="q45" value="c"> &lt;output&gt;</label>
+    <label class="option"><input type="radio" name="q45" value="d"> &lt;result&gt;</label>
+  </div>
+</div>
+
+<!-- 46 -->
+<div class="q" data-answer="b">
+  <h3>46. Which tag represents a caption for a &lt;figure&gt; or image?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q46" value="a"> &lt;caption&gt;</label>
+    <label class="option"><input type="radio" name="q46" value="b"> &lt;figcaption&gt;</label>
+    <label class="option"><input type="radio" name="q46" value="c"> &lt;legend&gt;</label>
+    <label class="option"><input type="radio" name="q46" value="d"> &lt;alt&gt;</label>
+  </div>
+</div>
+
+<!-- 47 -->
+<div class="q" data-answer="d">
+  <h3>47. Which tag is used to declare a section for content that requires user interaction like dialogs?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q47" value="a"> &lt;modal&gt;</label>
+    <label class="option"><input type="radio" name="q47" value="b"> &lt;popup&gt;</label>
+    <label class="option"><input type="radio" name="q47" value="c"> &lt;aside&gt;</label>
+    <label class="option"><input type="radio" name="q47" value="d"> &lt;dialog&gt;</label>
+  </div>
+</div>
+
+<!-- 48 -->
+<div class="q" data-answer="a">
+  <h3>48. Which tag is used to embed audio content?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q48" value="a"> &lt;audio&gt;</label>
+    <label class="option"><input type="radio" name="q48" value="b"> &lt;sound&gt;</label>
+    <label class="option"><input type="radio" name="q48" value="c"> &lt;music&gt;</label>
+    <label class="option"><input type="radio" name="q48" value="d"> &lt;mp3&gt;</label>
+  </div>
+</div>
+
+<!-- 49 -->
+<div class="q" data-answer="c">
+  <h3>49. Which tag represents a variable or placeholder name in programming contexts?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q49" value="a"> &lt;code&gt;</label>
+    <label class="option"><input type="radio" name="q49" value="b"> &lt;varname&gt;</label>
+    <label class="option"><input type="radio" name="q49" value="c"> &lt;var&gt;</label>
+    <label class="option"><input type="radio" name="q49" value="d"> &lt;placeholder&gt;</label>
+  </div>
+</div>
+
+<!-- 50 -->
+<div class="q" data-answer="b">
+  <h3>50. Which tag provides a short run of text that should be stylistically different from normal text (like underlined)?</h3>
+  <div class="options">
+    <label class="option"><input type="radio" name="q50" value="a"> &lt;span&gt;</label>
+    <label class="option"><input type="radio" name="q50" value="b"> &lt;u&gt;</label>
+    <label class="option"><input type="radio" name="q50" value="c"> &lt;small&gt;</label>
+    <label class="option"><input type="radio" name="q50" value="d"> &lt;i&gt;</label>
+  </div>
+</div>
+
+    <div class="controls">
+      <button type="button" id="submit">Submit &amp; Grade</button>
+      <button type="button" id="reset" class="secondary">Reset Answers</button>
+      <button type="button" id="retry" class="secondary retry">Retry (clear &amp; start over)</button>
+    </div>
+
+    <div id="results" hidden></div>
+
+    </form>
+
+  </div>
+
+<script>
+(function(){
+  const form = document.getElementById('quiz');
+  const submit = document.getElementById('submit');
+  const reset = document.getElementById('reset');
+  const retry = document.getElementById('retry');
+  const results = document.getElementById('results');
+  let start = Date.now();
+
+  function grade(){
+    const qs = Array.from(document.querySelectorAll('.q'));
+    let correct = 0;
+    const missed = [];
+    qs.forEach((q, idx)=>{
+      const name = 'q'+(idx+1);
+      const answer = q.getAttribute('data-answer');
+      const chosen = form[name].value || '';
+      if(chosen === answer) correct++;
+      else missed.push({num: idx+1, correct});
+    });
+    return {correct, total: qs.length, missed};
+  }
+
+  submit.addEventListener('click', ()=>{
+    const {correct, total, missed} = grade();
+    const percent = Math.round((correct/total)*100);
+    const took = Math.round((Date.now()-start)/1000);
+    results.hidden = false;
+    results.innerHTML = `\n      <strong>Score:</strong> ${correct} / ${total} (${percent}%)<br>
+      <span class="small"><strong>Time taken:</strong> ${took} seconds</span>
+      <div style="margin-top:8px">`;
+    if(missed.length){
+      results.innerHTML += `<div><strong class=\"wrong\">You missed ${missed.length} question(s):</strong></div><ol>`;
+      missed.forEach(m=>{
+        const qEl = document.querySelector('.q:nth-of-type('+m.num+')');
+        const correctAnswer = qEl.getAttribute('data-answer');
+        const correctText = Array.from(qEl.querySelectorAll('label.option'))
+          .find(l=>l.querySelector('input').value===correctAnswer).textContent.trim();
+        results.innerHTML += `<li>Q${m.num}: correct — <strong>${correctText}</strong></li>`;
+      });
+      results.innerHTML += `</ol>`;
+    } else {
+      results.innerHTML += `<div class="correct"><strong>Perfect! You answered all questions correctly.</strong></div>`;
+    }
+    results.innerHTML += `</div>`;
+    window.scrollTo({top: results.offsetTop - 20, behavior: 'smooth'});
+  });
+
+  reset.addEventListener('click', ()=>{
+    form.reset();
+  });
+  retry.addEventListener('click', ()=>{
+    form.reset(); start = Date.now(); results.hidden = true; results.innerHTML='';
+  });
+})();
+</script>
+</body>
 </html>

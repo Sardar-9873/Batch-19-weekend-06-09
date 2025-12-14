@@ -1,0 +1,32 @@
+div{
+    height: 500px;
+    width: 500px;
+    background-color: blue;
+}
+
+#b1{
+    position:sticky;
+    background-image: linear-gradient();
+    /* left:calc(50vw - 125px); */
+    /* top:calc(50vh - 125px); */
+}
+
+/* p{
+    position: relative;
+    z-index: 20;
+} */
+
+#b3{
+    position:static;
+    color:brown;
+    /* bottom:250px;
+    left:250px; */
+}
+
+#b2{
+     position:static;
+}
+
+#b5{
+    background-color: red;
+}
